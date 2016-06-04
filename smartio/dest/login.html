@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="framework/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/public.css">
+
+    <script src="framework/jquery/jquery.min.js"></script>
+    <script src="framework/angular/angular.js"></script>
+    <!--<script src="framework/bootstrap/js/bootstrap.min.js"></script>-->
+    <script src="framework/angular/angular-route.js"></script>
+    <title >SmartIO</title>
+</head>
+<body>
+<div ng-app="main" ng-controller="myCtrl">
+
+    名: <input type="text" ng-model="firstName"><br>
+    姓: <input type="text" ng-model="lastName"><br>
+    姓名: {{firstName + " " + lastName}}
+    <br>asdsdasdasasd
+    <li><a href="#/">首页</a></li>
+    <li><a href="#/computers">电脑</a></li>
+    <li><a href="#/printers">打印机</a></li>
+    <li><a href="#/blabla">其他</a></li>
+    <div ng-view></div>
+    <hello></hello>
+    <div hello ></div>
+    <!-- directive:hello -->
+</div>
+</body>
+
+<script src="js/app.js"></script>
+
+<script>
+    document.write('<scriptsrc="http://' + (location.host || 'localhost').split(':')[0] +
+            ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
+</html>
